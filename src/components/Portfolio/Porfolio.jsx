@@ -1,41 +1,53 @@
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
+import React from "react";
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+// Import Swiper styles
+import "swiper/css";
 import Sidebar from "../../img/sidebar.png";
-import "./Portfolio.css";
 import Ecommerce from "../../img/ecommerce.png";
 import HOC from "../../img/hoc.png";
 import MusicApp from "../../img/musicapp.png";
-import React from 'react';
+import "./Portfolio.css";
 
+// import required modules
+import { Autoplay} from "swiper";
 
-const Portfolio = () => {
+export default function App() {
   return (
+   <>
     <div className="portfolio">
-      {/* heading */}
-      <span >Recent Projects</span>
+    <span >Recent Projects</span>
       
       <span>Portfolio</span>
-
     <Swiper
-      spaceBetween={30}
-      slidesPerView={3}
-      grabCursor={true}
-      className="portfolio-slider"
+        className="portfolio-slider"
+        spaceBetween={30}
+        slidesPerView={2}
+        loop={true}
+        centeredSlides={true}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+       
+        modules={[Autoplay]}
       >
-      <SwiperSlide> 
-             <img src={Sidebar} alt="" />
-      </SwiperSlide>
-      <SwiperSlide> 
-      <img src={Ecommerce} alt="" />
-      </SwiperSlide>
-      <SwiperSlide>
-          <img src={MusicApp} alt="" />
+        <SwiperSlide>
+          <img src={Sidebar} alt="" />
+        </SwiperSlide>
+        <SwiperSlide> 
+        <img src={Ecommerce} alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={HOC} alt="" />
+        <img src={MusicApp} alt="" />
         </SwiperSlide>
-    </Swiper>
+        <SwiperSlide>
+        <img src={HOC} alt="" />
+        </SwiperSlide>
+       
+      </Swiper>
     </div>
+      
+    </>
   );
-};
-export default Portfolio;
+}
