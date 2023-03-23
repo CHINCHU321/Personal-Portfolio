@@ -29,6 +29,9 @@
   font-weight: bold;
 
 }
+.box :hover{
+  transform: scale();
+}
 .box i{
  transform: scale(2);
  padding-bottom: 2rem;
@@ -38,7 +41,7 @@
   font-weight: bold;
   font-size: 1.1rem;
   padding-bottom: 0.5rem;
-  color: var(--green);
+  color: var(--blue);
 
 }
 .box span {
