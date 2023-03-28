@@ -1,24 +1,40 @@
-import React from "react";
+import React,{ useContext } from "react";
+import { themeContext } from "../../Context";
+import Toggle from "../Toggle/Toggle";
 import'./Navbar.css';
+import {Link} from 'react-scroll'
 
 const Navbar = () =>{
+  const theme = useContext(themeContext);
+  const darkMode = theme.state.darkMode;
   return(
     <div className="n-wrapper">
           <div className="n-left">
-            <div className="n-name">Chinchu</div>
+            <div className="n-name" style={{color: darkMode ? "white" : ""}}>Chinchu</div>
+            <Toggle/>
           </div>
             
-          <div className="n-right">
-            <div className="n-list">
+          <div className="n-right"  >
+            <div className="n-list" >
               <ul style={{listStyleType:'none'}}>
-                <li>Home</li>
-                <li>Services</li>
-                <li>Education</li>
-                <li>Portfolio</li>
-                <li>Testimonial</li>
+                <Link spy={true} to='Navbar' smooth={true} activeClass='activeClass'>
+                  <li style={{color: darkMode ? "white" : ""}}>Home</li>
+                </Link>
+                <Link spy={true} to='Services' smooth={true} >
+                <li style={{color: darkMode ? "white" : ""}}>Services</li>
+                </Link>
+                <Link spy={true} to='Education' smooth={true} >
+                <li style={{color: darkMode ? "white" : ""}}>Education</li>
+                </Link>
+                <Link spy={true} to='Portfolio' smooth={true} >
+                <li style={{color: darkMode ? "white" : ""}}>Portfolio</li>
+                </Link>
+                
               </ul>
             </div>
-            <button className="button n-button">Contact</button>
+            <Link spy={true} to='Contact' smooth={true} >
+               <button className="button n-button">Contact</button>
+            </Link>
 
           </div>
 

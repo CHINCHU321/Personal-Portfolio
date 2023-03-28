@@ -16,11 +16,6 @@
   flex-direction: column;
 }
 
-.i-name{
-  display: flex;
-  flex-direction: column;
-}
-
 .i-name>:nth-child(1){
   color: var(--black);
   font-weight: bold;
@@ -76,7 +71,7 @@ cursor: pointer;
   .i-right > :nth-child(3) {
     transform: scale(0.57);
     left: -50%;
-    bottom: 5%;
+    bottom: -5%;
   }
   .i-right>:nth-child(4){
     transform: scale(0.6);
@@ -97,4 +92,47 @@ cursor: pointer;
     left: 56%;
     filter: blur(72px);
   }
+  @media screen and (max-width:480px){
+    .intro{
+      flex-direction: column;
+
+    }
+    .i-left{
+      top: -1rem;
+    }
+    .i-icons{
+      margin-top: 1.5rem;
+    }
   
+    .i-right{
+      transform: scale(.7);
+      left: -3rem;
+      top: 4rem;
+
+    }
+    .i-right .blur {
+      display: none;
+    }
+   
+    .i-right > :nth-child(1) {
+      left:-4.7rem;
+      top: 4rem;
+    }
+    .i-right > :nth-child(2) {
+      left:-4.7rem;
+      top: 1.5rem;
+
+    }
+    .i-right > :nth-child(3) {
+      left: -150%;
+      top: -5rem;
+      bottom: -5%;
+    }
+    .floating-div:nth-of-type(1){
+      /* display: none; */
+      top: -2rem !important;;
+    }
+    .i-name>:nth-child(3){
+       text-align: center;
+    }
+  }

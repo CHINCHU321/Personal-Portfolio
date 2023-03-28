@@ -1,56 +1,30 @@
-import React from "react";
 import "./Contact.css";
-import emailjs from "@emailjs/browser";
-import { useRef } from "react";
+import React,{ useContext } from "react";
+import { themeContext } from "../../Context";
 
 const Contact = () => {
-  const form = useRef();
-  //const [done, setDone] = useState(false);
-  
-  const sendEmail = (e) => {
-    e.preventDefault();
-
-    emailjs
-       .sendForm(
-      "service_bxzr0gh",
-      "template_95ek74m",
-      form.current,
-      "PZW-rFDn2lsXAgC8n"
-    )
-      .then(
-        (result) => {
-          console.log(result.text);
-         // setDone(true);
-        //  form.reset();
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-  };
-
-  return (
-    <div className="contact-form" id="contact">
-      {/* left side copy and paste from work section */}
+  const theme = useContext(themeContext);
+  const darkMode = theme.state.darkMode;
+    return (
+    <div className="contact-form" id="Contact">
       <div className="w-left">
         <div className="awesome">
-          {/* darkMode */}
-          <span >Get in Touch</span>
+          <span style={{color: darkMode ? "white" : ""}}>Get in Touch</span>
           <span>Contact me</span>
           <div
             className="blur s-blur1"
             style={{ background: "#ABF1FF94" }}
-          ></div>
+          >
+         </div>
         </div>
       </div>
       {/* right side form */}
       <div className="c-right">
-        <form ref={form} onSubmit={sendEmail}>
-          <input type="text" name="user_name" className="user"  placeholder="Name"/>
-          <input type="email" name="user_email" className="user" placeholder="Email"/>
-          <textarea name="message" className="user" placeholder="Message"/>
+        <form action="https://formspree.io/f/xvonbnnl" method="POST" className="contact-inputs">
+          <input type="text" name="user_name" className="user"  placeholder="Name" autoComplete="off" required/>
+          <input type="email" name="user_email" className="user" placeholder="Email" autoComplete="off" required/>
+          <textarea name="message" className="user" placeholder="Message" autoComplete="off" required/>
           <input type="submit" value="Send" className="button"/>
-        {/* <span>{done && "Thanks for Contacting me"}</span>*/}
           <div
             className="blur c-blur1"
             style={{ background: "var(--purple)" }}

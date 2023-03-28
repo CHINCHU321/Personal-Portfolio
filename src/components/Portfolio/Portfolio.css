@@ -1,12 +1,10 @@
 .portfolio {
   display: flex;
-}.portfolio {
-  display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   height: 77vh;
-margin-top: 1rem;
+  margin-top: 1rem;
 }
 /* heading */
 .portfolio span:nth-of-type(1) {
@@ -14,14 +12,12 @@ margin-top: 1rem;
   font-size: 2rem;
   font-weight: bold;
 }
-
 .portfolio span:nth-of-type(2) {
   color: var(--orange);
   font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 2rem;
 }
-
 /* slider */
 .portfolio .swiper{
   width: 100%;
@@ -30,9 +26,7 @@ margin-top: 1rem;
 .portfolio-slider {
   margin-top: 3rem;
   width: 50%;
-  
-}
-
+ }
 .portfolio-slider .swiper-slide {
   width: 10rem;
   display: flex;
@@ -43,4 +37,19 @@ margin-top: 1rem;
   width: 19rem;
   filter: drop-shadow(-12px 15px 13px rgba(0, 0, 0, 0.25));
   border-radius: 19px;
+}
+@media screen and (max-width: 480px) {
+  .portfolio{
+    height: 60vh;
+  }
+  .portfolio span:nth-of-type(1) {
+    font-size: 1.9rem;
+  }
+  .portfolio span:nth-of-type(2) {
+    margin-bottom: -2rem;
+  }
+  .portfolio img {
+    width: 7rem;
+    border-radius: 19px;
+}
 }

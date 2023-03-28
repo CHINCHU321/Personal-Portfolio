@@ -1,21 +1,24 @@
-import React from "react";
+import React,{ useContext } from "react";
+import { themeContext } from "../../Context";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
 import Sidebar from "../../img/sidebar.png";
 import Ecommerce from "../../img/ecommerce.png";
-import HOC from "../../img/hoc.png";
+import portfolioproject from "../../img/portfolioproject.png";
 import MusicApp from "../../img/musicapp.png";
 import "./Portfolio.css";
 
 // import required modules
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 export default function App() {
+  const theme = useContext(themeContext);
+  const darkMode = theme.state.darkMode;
   return (
    <>
-    <div className="portfolio">
-    <span >Recent Projects</span>
+    <div className="portfolio" id='Portfolio'>
+    <span style={{color: darkMode ? "white" : ""}}>Recent Projects</span>
       
       <span>Portfolio</span>
     <Swiper
@@ -25,9 +28,8 @@ export default function App() {
         slidesPerView={2}
         loop={true}
         navigation
-        pagination={{ clickable: true }}
+        pagination={{ clickable: true }} 
         centeredSlides={true}
-       
       >
         <SwiperSlide>
           <img src={Sidebar} alt="" />
@@ -39,7 +41,7 @@ export default function App() {
         <img src={MusicApp} alt="" />
         </SwiperSlide>
         <SwiperSlide>
-        <img src={HOC} alt="" />
+        <img src={portfolioproject} alt="" />
         </SwiperSlide>
        
       </Swiper>

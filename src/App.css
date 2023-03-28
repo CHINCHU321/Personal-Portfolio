@@ -4,6 +4,7 @@
     --green : #18c40b;
      --blue : #09a3d6;
     --black : #242D49;
+    --white :  #f1f2f5;
     --gray : #788097;
     --orange : #FCA61F;
     --blueCard : #DDF8FE;
@@ -14,7 +15,7 @@
 }
 
 .App{
-    padding: 0.5rem 3.5rem;
+    padding:  0.5rem 3.5rem;
     overflow: hidden;
     color: var(--black);    
 }
@@ -36,4 +37,9 @@
   
 }
 
+@media screen and (max-width:480px){
+  .App{
+    padding: 28px;
+  }
   
+}
