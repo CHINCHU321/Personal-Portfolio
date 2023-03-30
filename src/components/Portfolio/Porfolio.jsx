@@ -41,7 +41,9 @@ export default function App() {
         <img src={MusicApp} alt="" />
         </SwiperSlide>
         <SwiperSlide>
+        <a href="https://github.com/CHINCHU321/Personal-Portfolio">
         <img src={portfolioproject} alt="" />
+        </a>
         </SwiperSlide>
        
       </Swiper>
