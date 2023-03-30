@@ -16,7 +16,7 @@ function App() {
       className="App"
       style={{
         color: darkMode? "white" : "",
-        background: darkMode? "black" : "",
+        background: darkMode? "rgb(18, 17, 17)" : "",
       }}
     >
       <Navbar  />

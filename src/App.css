@@ -1,9 +1,10 @@
 :root
 {
-     --lightblue: #2ffbe7;
+     --purple: #662fbe;
     --green : #18c40b;
      --blue : #09a3d6;
-    --black : #242D49;
+     --black : #111014;
+    --blackish : #242D49;
     --white :  #f1f2f5;
     --gray : #788097;
     --orange : #FCA61F;
@@ -21,19 +22,26 @@
 }
 
 .button{
-  background: linear-gradient(180deg, #18c40b 26.71%, #2ffbe7 99.36%);
-  box-shadow: 0px 20px 24px 3px rgba(114, 241, 10, 0.42);
+
+  background: linear-gradient(120deg, #111014 26.71%, #662fbe 99.36%);
+  box-shadow: 0px 20px 24px 3px rgba(98, 86, 207, 0.42);
   border-radius: 34px;
   border: none;
   color: white;
   font-size: 16px;
   padding: 11px 26px 11px 26px;
 }
+@keyframes kreep {
+  0% {-webkit-transform: scale(1.1,.9);
+      transform: scale(1.1,.9);}
+ 50% { -webkit-transform: scale(.9,1.1) translateY(-.5rem)}
+ 70% { -webkit-transform: scale(1);
+       transform: scale(1);}
+}
 .button:hover{
-  background: white;
+  background: linear-gradient(120deg, #662fbe 26.71%, #111014 99.36%);
   cursor: pointer;
-  color: var(--green);
-  border: 1px solid var(--green);
+  border: 1px solid var(--black);
   
 }
 

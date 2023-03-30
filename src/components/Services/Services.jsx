@@ -22,9 +22,11 @@ const Services = () => {
           <br/>
             business requirements to provide agility.
           </span>
-          <a href={MyResume} >
+          <div className="wiggle">
+          <a href={MyResume}>
           <button className="button s-button">Download CV</button>
-        </a>
+          </a>
+          </div>
         <div className="blur s-blur1" style={{ background: "#ABF1FF94" }}></div>
        </div>
             {/*right side*/}
