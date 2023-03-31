@@ -1,6 +1,6 @@
 .intro{
   display: flex;
-  height: 77vh;
+  height: 70vh;
   margin-top: 6rem;
   margin-bottom: 0;
 }
@@ -102,10 +102,19 @@ cursor: pointer;
     .i-left{
       top: -1rem;
     }
+    .i-button{
+      margin-left: 2.8rem;
+    }
     .i-icons{
       margin-top: 1.5rem;
+      margin-left: -0.6rem;
     }
-  
+    .i-name>:nth-child(1){
+      font-size: 2.5rem;
+    }
+    .i-name>:nth-child(2){
+      font-size: 1.9rem;
+    }
     .i-right{
       transform: scale(.7);
       left: -3rem;
