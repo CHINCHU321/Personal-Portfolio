@@ -4,10 +4,8 @@ import './Services.css';
 import glasses from '../../img/glasses.png';
 import Card from "../Card/Card";
 import MyResume from './MyResume.pdf';
-import { motion } from 'framer-motion';
 
 const Services = () => {
-  const transition = {duration: 1, type: 'spring',};
 
     const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
@@ -16,7 +14,7 @@ const Services = () => {
         {/*left side*/}
         <div className="awesome">
           <span style={{color: darkMode ? "white" : ""}}>My Awesome</span>
-          <span>service</span>
+          <span>Service</span>
           <span >
             Build custom applications and solutions for changing
           <br/>
@@ -31,17 +29,13 @@ const Services = () => {
        </div>
             {/*right side*/}
 
-        <motion.div
-            initial={{ left: "30rem" }}
-            whileInView={{ left: "14rem" }}
-            transition={transition}
-          >
+        <div>
             <Card
             emoji ={glasses}
             heading ={'Developer'}
             details ={'Html, Css, Sass JavaScript, ReactJS, React Native'}
             />
-        </motion.div>
+        </div>
         <div className="blur s-blur2" style={{ background: "var(--purple)"}}>
 
         </div>

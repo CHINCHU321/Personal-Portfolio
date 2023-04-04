@@ -4,7 +4,7 @@ import { themeContext } from "../../Context";
 import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
-import Sidebar from "../../img/sidebar.png";
+import  WIWBank from "../../img/WIWBank.png";
 import Ecommerce from "../../img/ecommerce.png";
 import portfolioproject from "../../img/portfolioproject.png";
 import MusicApp from "../../img/musicapp.png";
@@ -32,7 +32,9 @@ export default function App() {
         centeredSlides={true}
       >
         <SwiperSlide>
-          <img src={Sidebar} alt="" />
+        <a href="https://github.com/CHINCHU321/Wiw-Bank">
+          <img src={WIWBank} alt="" />
+        </a>
         </SwiperSlide>
         <SwiperSlide> 
         <img src={Ecommerce} alt="" />

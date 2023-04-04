@@ -39,3 +39,9 @@
   transform: scale(1.1);
   cursor: pointer;
 }
+@media screen and (max-width: 480px) {
+  .card {
+    margin-left: 0;
+
+  }
+}

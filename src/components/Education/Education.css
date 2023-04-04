@@ -69,23 +69,19 @@
 
 }
 @media screen and (max-width: 480px) {
+  .education{
+        flex-direction: column;
+
+  }
   .education .box-container {
     align-items: center;
-    text-align: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 3rem 3rem;
+    justify-content: center;
+    gap: 2.5rem;
   }
   .heading {
     text-align: center;
   }
-  .box-container{
-    
-    display: flex;
-    flex-direction: column;
-    gap: 2.5rem;
-    margin-left: -5rem;
-  }
+  
   .box{
     height: 12rem;
     width: 13rem;

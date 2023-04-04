@@ -103,18 +103,24 @@
     gap: 5rem;
     height: 27rem;
     padding: 0;
+
+    
+  }
+  .services div{
+    justify-content: center;
+    align-items: center;
+  }
+    
+  .awesome{
+    justify-content: center;
+      align-items: center;
   }
   .s-button {
     height: 2rem;
     margin-top: .9rem;
-    margin-left: 2.1rem;
   }
   .card {
-    display: flex;
-    flex-direction: column;
-    gap: 17rem;
-    left:-14.7rem;
-    
+    scale: 0.8;
   }
   .awesome > :nth-child(3) {
     text-align: center;
