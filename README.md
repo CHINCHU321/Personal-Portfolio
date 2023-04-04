@@ -2,7 +2,7 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## [Portfolio website link](https://64271971e32b3400af815ff3--neon-dodol-d9d13f.netlify.app/).
+## [Portfolio website link](https://neon-dodol-d9d13f.netlify.app/).
 
 ## Available Scripts
 
