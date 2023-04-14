@@ -5,9 +5,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
 import  WIWBank from "../../img/WIWBank.png";
-import Ecommerce from "../../img/ecommerce.png";
+import HEXAGYM from "../../img/HEXAGYM.png";
 import portfolioproject from "../../img/portfolioproject.png";
-import MusicApp from "../../img/musicapp.png";
 import "./Portfolio.css";
 
 // import required modules
@@ -37,17 +36,16 @@ export default function App() {
         </a>
         </SwiperSlide>
         <SwiperSlide> 
-        <img src={Ecommerce} alt="" />
-        </SwiperSlide>
-        <SwiperSlide>
-        <img src={MusicApp} alt="" />
+        <a href="https://github.com/CHINCHU321/Gym-typescript">
+        <img src={HEXAGYM} alt="" />
+        </a>
         </SwiperSlide>
         <SwiperSlide>
         <a href="https://github.com/CHINCHU321/Personal-Portfolio">
         <img src={portfolioproject} alt="" />
         </a>
         </SwiperSlide>
-       
+                
       </Swiper>
     </div>
       
