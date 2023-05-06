@@ -23,8 +23,8 @@ export default function App() {
     <Swiper
         modules={[Navigation, Pagination, Scrollbar, A11y]}
         className="portfolio-slider"
-        spaceBetween={30}
-        slidesPerView={2}
+        spaceBetween={25}
+        slidesPerView={1}
         loop={true}
         navigation
         pagination={{ clickable: true }} 

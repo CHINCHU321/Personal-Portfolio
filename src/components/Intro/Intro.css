@@ -1,14 +1,17 @@
 .intro{
   display: flex;
-  height: 70vh;
+  flex-wrap: wrap;
+  height: 90vh;
   margin-top: 6rem;
-  margin-bottom: 0;
+  margin-bottom: 1rem;
+  
 }
 .i-left{
   display: flex;
   position: relative;
   flex: 1;
   flex-direction: column;
+  flex-wrap: wrap;
   gap: 2rem;
 }
 .i-name{
@@ -47,35 +50,29 @@
 
 .i-icons>*:hover{
   transform: scale(0.6);
-
-cursor: pointer;
+  cursor: pointer;
 }
-
-
 .i-right {
+  display: flex;
+  flex-wrap: wrap;
   flex: 1;
   position: relative;
-  }
+    }
   .i-right>*{
     position: absolute;
     z-index: 1;
+    
   }
   .i-right > :nth-child(1) {
-    transform: scale(0.69);
-    left: -15%;
-    top: -9%;
+    transform: scale(0.4);
+    box-shadow: 10px 10px 10px 10px #595858;
+    padding: 0;
+    left: -2rem;
+    top: -10rem;
+    align-items: center;
+  justify-content: center;
   }
-  .i-right > :nth-child(2) {
-    top: -4.6rem;
-    transform: scale(0.67);
-    left: -3rem;
-  }
-  .i-right > :nth-child(3) {
-    transform: scale(0.57);
-    left: -50%;
-    bottom: -10%;
-  }
-  .i-right>:nth-child(4){
+  .i-right>:nth-child(2){
     transform: scale(0.6);
     top: -19%;
     left: -24%;
@@ -96,54 +93,34 @@ cursor: pointer;
   }
   @media screen and (max-width:480px){
     .intro{
+      display: flex;
+      flex-wrap: wrap;
       flex-direction: column;
-
+      gap: 3rem;
     }
     .i-left{
-      top: -1rem;
-    }
-    .i-button{
-      margin-left: 2.8rem;
-    }
-    .i-icons{
-      margin-top: 1.5rem;
-      margin-left: -0.6rem;
-    }
-    .i-name>:nth-child(1){
-      font-size: 2.5rem;
-    }
-    .i-name>:nth-child(2){
-      font-size: 1.9rem;
+      align-items: center;
+      justify-content: center;
     }
     .i-right{
       transform: scale(.7);
-      left: -3rem;
-      top: 4rem;
-
+      align-items: center;
+      justify-content: center;
     }
-    .i-right .blur {
-      display: none;
-    }
-   
+    
     .i-right > :nth-child(1) {
-      left:-4.7rem;
-      top: 4rem;
-    }
-    .i-right > :nth-child(2) {
-      left:-4.7rem;
-      top: 1.5rem;
-
-    }
-    .i-right > :nth-child(3) {
-      left: -150%;
-      top: -5rem;
-      bottom: -5%;
+       top: -1rem;
+       bottom: -5%;
+       transform: scale(0.57);
+       left: -7rem;
     }
     .floating-div:nth-of-type(1){
-      /* display: none; */
-      top: -2rem !important;;
+        top: -2rem !important;;
     }
-    .i-name>:nth-child(3){
-       text-align: center;
+
+  }@media (min-width: 481px) and (max-width: 800px){
+    .i-icons{
+      margin-top: 0;
     }
   }
+  

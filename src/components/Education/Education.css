@@ -1,8 +1,10 @@
-.section {
-  min-height: 100vh;
-  padding: 1rem;
-  display: block;
-
+.education {
+  height: 80vh;
+  margin-top: 6rem;
+  margin-bottom: 1rem;
+  padding: 5rem 0;
+  flex-wrap: wrap;
+  display: flex;
 }
 * {
   font-family: Gumelo;
@@ -35,10 +37,11 @@
   padding: 2rem 2rem;
   border-radius: 5rem;
   box-shadow: 10px 10px 5px #595858;
+  display: flex;
+  flex-direction: column;
+  
 }
-.box :hover{
-  transform: scale();
-}
+
 .box i{
  transform: scale(2);
  padding-bottom: 2rem;
@@ -63,37 +66,51 @@
   flex-wrap: wrap;
   padding: 5rem 5rem;
 }
-.box{
-  display: flex;
-  flex-direction: column;
-
-}
 @media screen and (max-width: 480px) {
-  .education{
-        flex-direction: column;
-
+  .education {
+    margin-top: 15rem;
+    margin-bottom: 15rem;
   }
   .education .box-container {
     align-items: center;
     justify-content: center;
-    gap: 2.5rem;
-  }
-  .heading {
     text-align: center;
-  }
-  
-  .box{
-    height: 12rem;
-    width: 13rem;
-    margin-left: 1.2rem;
-  }
-  .box i{
-    transform: scale(1.4);
-
-    padding-bottom: 1.3rem;
-  }
-  .box span {
-    font-size: 0.7rem;
-  }
+    gap: 2.5rem;
+    padding:  2rem 0;
+}
+.box{
+  text-align: center;
+  flex-wrap: wrap;
+  height: 12rem;
+  width: 15rem;
+  padding: 1rem 0;
+  position: relative;
 
 }
+ .heading {
+  text-align: center;
+}
+.box i{
+  transform: scale(1.4);
+
+  padding-bottom: 1.3rem;
+}
+.box span {
+  font-size: 0.7rem;
+}
+}
+@media (min-width: 481px) and (max-width: 900px){
+  .education  {
+    align-items: center;
+    justify-content: center;
+    margin-top: 10rem;
+
+}
+.education .box-container {
+  align-items: center;
+  justify-content: center;
+}}
+
+
+
+ 

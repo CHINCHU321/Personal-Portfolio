@@ -3,8 +3,6 @@ import './Intro.css';
 import Github from '../../img/github.png';
 import LinkedIn from '../../img/linkedin.png';
 import Instagram from '../../img/instagram.png';
-import Vector1 from '../../img/Vector1.png';
-import Vector2 from '../../img/Vector2.png';
 import mypic1 from '../../img/mypic1.png';
 import crown from '../../img/crown.png';
 import glassesimoji from '../../img/glassesimoji.png';
@@ -54,11 +52,10 @@ const transition = {duration : 2, type: 'spring'}
         </div>
       </div>
       <div className="i-right">
-        <img src={Vector1} alt=""/>
-        <img src={Vector2} alt=""/>
+        
         <img src={mypic1} alt=""/>
         <motion.img 
-        initial={{left:'-36%'}}
+        initial={{left:'-56%'}}
         whileInView= {{left:'-24%'}}
         transition={transition}
         src={glassesimoji} alt=""/>

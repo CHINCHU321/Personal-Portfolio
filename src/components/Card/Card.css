@@ -40,8 +40,17 @@
   cursor: pointer;
 }
 @media screen and (max-width: 480px) {
-  .card {
-    margin-left: 0;
+  .card{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    width: 18rem;
+    height: 20rem;
 
   }
+}
+@media (min-width: 481px) and (max-width: 800px){
+ .card{
+  margin-left: 1.5rem;
+ }
 }

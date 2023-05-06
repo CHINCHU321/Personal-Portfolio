@@ -1,10 +1,9 @@
 .contact-form{
-  padding: 0 3rem 0 3rem;
+  padding: 5rem 3rem 5rem 3rem;
   display: flex;
   height: 80vh;
-  margin-top: 4rem;
-    /* scroll */
-padding-top: 3rem;
+  margin-top: 6rem;
+  margin-bottom: 1rem;
 }
 
 .c-right{
@@ -43,7 +42,7 @@ textarea{
       flex-direction: column;
       gap: 5rem;
       height: 40rem;
-      top: 3rem;
+
   }
   .awesome>span:nth-of-type(1){
       font-size: 2rem;
@@ -57,4 +56,16 @@ textarea{
   .c-right .user{
       width: 14rem;
   }
-}   
+
+} 
+@media (min-width: 481px) and (max-width: 999px){
+  .contact-form{
+display: flex;    
+flex-direction: column;
+align-items: center;
+gap: 2rem;
+padding: 0 3rem 7rem 3rem;
+margin-top: 3rem;
+
+}
+}

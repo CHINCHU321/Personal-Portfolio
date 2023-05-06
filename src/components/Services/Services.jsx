@@ -3,7 +3,7 @@ import { themeContext } from "../../Context";
 import './Services.css';
 import glasses from '../../img/glasses.png';
 import Card from "../Card/Card";
-import MyResume from './MyResume.pdf';
+//import MyResume from './MyResume.pdf';
 
 const Services = () => {
 
@@ -21,19 +21,19 @@ const Services = () => {
             business requirements to provide agility.
           </span>
           <div className="wiggle">
-          <a href={MyResume}>
+          {/*<a href={MyResume}>
           <button className="button s-button">Download CV</button>
-          </a>
+  </a>*/}
           </div>
         <div className="blur s-blur1" style={{ background: "#ABF1FF94" }}></div>
        </div>
             {/*right side*/}
 
-        <div>
+        <div >
             <Card
             emoji ={glasses}
             heading ={'Developer'}
-            details ={'Html, Css, Sass JavaScript, ReactJS, React Native'}
+            details ={'Html, Css, Sass, Tailwind Css, JavaScript, ReactJS, Redux'}
             />
         </div>
         <div className="blur s-blur2" style={{ background: "var(--purple)"}}>

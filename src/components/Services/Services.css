@@ -1,11 +1,12 @@
 .services {
   padding: 0 3rem 0 3rem;
   display: flex;
-  height:15rem;
-  margin-top: 9rem;
-  margin-bottom: 13rem;
+  flex-wrap: wrap;
+  height: 70vh;
+  margin-top: 6rem;
+  margin-bottom: 1rem;
+  padding: 5rem 0;
   /* scroll view */
-  padding-top: 3rem;
 }
 /* left side */
 .awesome {
@@ -29,7 +30,7 @@
   margin-bottom: 1rem;
   color: var(--gray);
   font-size: .8rem;
-}
+}/*
 .s-button {
   width: 7.5rem;
   height: 2rem;
@@ -86,7 +87,7 @@
   
   div.wiggle:hover {
   animation: none;
-  }
+  }*/
 .s-blur2 {
   left: 14rem;
   top: 8rem;
@@ -98,12 +99,13 @@
 }
 @media screen and (max-width: 480px) {
   .services {
-    margin-top: 40rem;
+    margin-top: 30rem;
     flex-direction: column;
     gap: 5rem;
     height: 27rem;
     padding: 0;
-
+    display: flex;
+    flex-wrap: wrap;
     
   }
   .services div{
@@ -114,11 +116,11 @@
   .awesome{
     justify-content: center;
       align-items: center;
-  }
+  }/*
   .s-button {
     height: 2rem;
     margin-top: .9rem;
-  }
+  }*/
   .card {
     scale: 0.8;
   }
@@ -126,3 +128,4 @@
     text-align: center;
   }
   }
+  
