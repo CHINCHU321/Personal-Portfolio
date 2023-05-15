@@ -20,7 +20,7 @@ export default function App() {
     <span style={{color: darkMode ? "white" : ""}}>Recent Projects</span>
       
       <span>Portfolio</span>
-    <Swiper
+     <Swiper
         modules={[Navigation, Pagination, Scrollbar, A11y]}
         className="portfolio-slider"
         spaceBetween={25}
@@ -31,19 +31,28 @@ export default function App() {
         centeredSlides={true}
       >
         <SwiperSlide>
-        <a href="https://github.com/CHINCHU321/Wiw-Bank">
+          <a href="https://github.com/CHINCHU321/Wiw-Bank">
           <img src={WIWBank} alt="" />
-        </a>
+          </a>
+          <a href="https://github.com/CHINCHU321/Wiw-Bank" className=" button gbtn">
+          Github
+          </a>
         </SwiperSlide>
         <SwiperSlide> 
-        <a href="https://github.com/CHINCHU321/Gym-typescript">
-        <img src={HEXAGYM} alt="" />
-        </a>
+          <a href="https://github.com/CHINCHU321/Gym-typescript">
+          <img src={HEXAGYM} alt="" />
+          </a>
+          <a href="https://github.com/CHINCHU321/Gym-typescript" className=" button gbtn">
+          Github
+          </a>
         </SwiperSlide>
         <SwiperSlide>
-        <a href="https://github.com/CHINCHU321/Personal-Portfolio">
-        <img src={portfolioproject} alt="" />
-        </a>
+          <a href="https://github.com/CHINCHU321/Personal-Portfolio">
+          <img src={portfolioproject} alt="" />
+          </a>
+          <a href="https://github.com/CHINCHU321/Personal-Portfolio" className=" button gbtn">
+          Github
+          </a>
         </SwiperSlide>
                 
       </Swiper>

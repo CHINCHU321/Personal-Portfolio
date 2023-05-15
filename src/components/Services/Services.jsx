@@ -19,17 +19,17 @@ const Services = () => {
             Build custom applications and solutions for changing
           <br/>
             business requirements to provide agility.
-          </span>
+          </span>{/*
           <div className="wiggle">
-          {/*<a href={MyResume}>
+          <a href={MyResume}>
           <button className="button s-button">Download CV</button>
-  </a>*/}
-          </div>
+          </a>
+          </div>*/}
         <div className="blur s-blur1" style={{ background: "#ABF1FF94" }}></div>
        </div>
             {/*right side*/}
 
-        <div >
+        <div className="cards" >
             <Card
             emoji ={glasses}
             heading ={'Developer'}

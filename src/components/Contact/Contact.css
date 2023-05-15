@@ -1,16 +1,14 @@
 .contact-form{
-  padding: 5rem 3rem 5rem 3rem;
-  display: flex;
+  padding: 0 3rem ;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
   height: 80vh;
-  margin-top: 6rem;
-  margin-bottom: 1rem;
+  margin-top: 3rem;
+  padding-top: 3rem;
 }
-
 .c-right{
-  display: flex;
-  justify-content: center;
-  position: relative;
-  flex: 1;
+   position: relative;
 }
 .c-right>form
 {
@@ -39,33 +37,25 @@ textarea{
 @media screen and (max-width: 480px) {
   .contact-form{
       padding: 0;
-      flex-direction: column;
-      gap: 5rem;
-      height: 40rem;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 0;
 
   }
-  .awesome>span:nth-of-type(1){
-      font-size: 2rem;
-      text-align: center;
-
+     .c-right .user{
+      width: 16rem;
   }
-  .awesome>span:nth-of-type(2){
-    font-size: 2rem;
-    text-align: center;
-  }
-  .c-right .user{
-      width: 14rem;
-  }
-
 } 
-@media (min-width: 481px) and (max-width: 999px){
+@media (min-width: 481px) and (max-width: 767px) {
   .contact-form{
-display: flex;    
-flex-direction: column;
-align-items: center;
-gap: 2rem;
-padding: 0 3rem 7rem 3rem;
-margin-top: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
 
 }
+@media (min-width: 768px) and (max-width: 1024px){
+  .contact-form{
+    height: auto;
+    margin-bottom: 8rem;
+  }
 }

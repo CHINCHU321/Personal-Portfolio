@@ -32,3 +32,8 @@
     transform: scale(.5);
   }
 }
+@media (min-width: 481px) and (max-width: 800px){
+  .f-content{
+    transform: scale(.6);
+  }
+}

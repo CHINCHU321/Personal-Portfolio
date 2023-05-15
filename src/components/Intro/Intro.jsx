@@ -54,20 +54,19 @@ const transition = {duration : 2, type: 'spring'}
       <div className="i-right">
         
         <img src={mypic1} alt=""/>
+
         <motion.img 
-        initial={{left:'-56%'}}
+        initial={{left:'-36%'}}
         whileInView= {{left:'-24%'}}
         transition={transition}
         src={glassesimoji} alt=""/>
 
         <motion.div
-        initial={{top: '-4%', left:'80%'}}
-        whileInView= {{left:'60%'}}
+        initial={{left:'74%'}}
+        whileInView= {{left:'55%'}}
         transition={transition}
-        style={{left: '60%', top: '-2%'}}
         className='floating-div'>
-        
-          <FloatingDiv image={crown} txt1='Web' txt2='Developer'/>
+            <FloatingDiv image={crown} txt1='Web' txt2='Developer'/>
         </motion.div>
         
         <div className="blur" style={{ background: "rgb(238 210 255)" }}></div>

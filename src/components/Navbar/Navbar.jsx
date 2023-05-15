@@ -8,7 +8,7 @@ const Navbar = () =>{
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
   return(
-    <div className="n-wrapper">
+    <div className="n-wrapper" style={{background: darkMode? "rgb(18, 17, 17)" : "white"}}>
           <div className="n-left">
             <div className="n-name" style={{color: darkMode ? "white" : ""}}>Chinchu</div>
             <Toggle/>

@@ -1,10 +1,7 @@
 .education {
-  height: 80vh;
-  margin-top: 6rem;
-  margin-bottom: 1rem;
-  padding: 5rem 0;
-  flex-wrap: wrap;
-  display: flex;
+  height: 90vh;
+  padding: 3rem 0;
+  margin: 3rem 0;
 }
 * {
   font-family: Gumelo;
@@ -23,94 +20,55 @@
 .heading {
   font-weight: bold;
   font-size: 2.5rem;
-
+  padding-bottom: 2rem;
 }
 .heading span{
   color: var(--orange);
   font-size: 2.5rem;
   font-weight: bold;
-
 }
-.box{
-  height: 15rem;
-  width: 18rem;
-  padding: 2rem 2rem;
-  border-radius: 5rem;
-  box-shadow: 10px 10px 5px #595858;
-  display: flex;
-  flex-direction: column;
-  
-}
-
-.box i{
- transform: scale(2);
- padding-bottom: 2rem;
-}
-
-.box span:nth-of-type(1){
-  font-weight: bold;
-  font-size: 1.1rem;
-  padding-bottom: 0.5rem;
-
-}
-.box span {
-  padding-bottom: 0.5rem;
-  color: black;
-}
-
 .education .box-container {
-  display: flex;
-  align-items: top;
-  text-align: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  padding: 5rem 5rem;
+  width: 50vw;
+  margin: 1rem auto 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2rem;
 }
-@media screen and (max-width: 480px) {
-  .education {
-    margin-top: 15rem;
-    margin-bottom: 15rem;
+  .box{
+    
+    background: lighten(black, 10%);
+    padding: 0.5rem;
+    border-bottom: 5px solid orange;
   }
-  .education .box-container {
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    gap: 2.5rem;
-    padding:  2rem 0;
-}
-.box{
-  text-align: center;
-  flex-wrap: wrap;
-  height: 12rem;
-  width: 15rem;
-  padding: 1rem 0;
-  position: relative;
+  
+  .box span:nth-of-type(2){
+    color: var(--gray);
+    margin: 0.5rem 0;
+    display: block;
+    font-size: .8rem;
 
+    }
+    @media (min-width: 768px) and (max-width: 1024px){
+      .education {
+        height: auto;
+        padding: 1rem 0;
+        margin: 5rem 0;
+      }
+    }
+  /* Media Query for Laptops and Desktops */
+  @media (min-width: 1025px) and (max-width: 1280px){
+    .education {
+      height: auto;
+      padding: 1rem 0;
+      margin: 5rem 0;
+    }
 }
- .heading {
-  text-align: center;
+  
+/* Media Query for Large screens */
+@media (min-width: 1281px) {
+  .education {
+    height: auto;
+    padding: 1rem 0;
+    margin: 5rem 0;
+  }
 }
-.box i{
-  transform: scale(1.4);
-
-  padding-bottom: 1.3rem;
-}
-.box span {
-  font-size: 0.7rem;
-}
-}
-@media (min-width: 481px) and (max-width: 900px){
-  .education  {
-    align-items: center;
-    justify-content: center;
-    margin-top: 10rem;
-
-}
-.education .box-container {
-  align-items: center;
-  justify-content: center;
-}}
-
-
-
- 

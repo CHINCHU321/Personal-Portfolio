@@ -1,9 +1,15 @@
 .n-wrapper{
-  height: 10vh;
+  height: 8vh;
   display: flex;
   justify-content: space-between;
   margin-bottom: 2rem;
   top: 0;
+  right: 0;
+  left: 0;
+  z-index: 100;
+  position: fixed;
+  background-color: rgb(18, 17, 17);
+  padding: 0 4rem;
 }
 .n-left{
   flex: 1;
@@ -11,6 +17,7 @@
   justify-content: left;
   display: flex;
   gap: 2rem;
+
 }
 .n-name{
   font-size: 2rem;
@@ -26,7 +33,7 @@
 }
 .n-list{
   flex: 10;
-
+  display: flex;
 }
 .n-list > ul{
   display: flex;
@@ -35,12 +42,13 @@
   cursor: pointer;
 
 }
-
 .n-button{
   flex: 2;
 }
 @media screen and (max-width:480px){
-
+  .n-wrapper{
+    height: 6vh;
+  }
   .n-list{
     display:none;
     
@@ -50,5 +58,16 @@
   }
   .n-left{
         gap: 2.5rem;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .n-wrapper{
+    height: 6vh;
+    width: auto;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px){
+  .n-wrapper{
+    height: 6vh;
   }
 }
