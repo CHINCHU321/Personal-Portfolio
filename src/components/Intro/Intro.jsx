@@ -2,7 +2,6 @@ import React,{ useContext } from "react";
 import './Intro.css';
 import Github from '../../img/github.png';
 import LinkedIn from '../../img/linkedin.png';
-import Instagram from '../../img/instagram.png';
 import mypic1 from '../../img/mypic1.png';
 import crown from '../../img/crown.png';
 import glassesimoji from '../../img/glassesimoji.png';
@@ -44,11 +43,6 @@ const transition = {duration : 2, type: 'spring'}
           <img src={LinkedIn} alt=''/>
 
           </a>
-          <a href="https://www.instagram.com/chinchu____mariam/">
-          <img src={Instagram} alt=''/>
-
-          </a>
-
         </div>
       </div>
       <div className="i-right">
