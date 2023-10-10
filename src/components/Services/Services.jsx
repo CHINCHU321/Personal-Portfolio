@@ -16,9 +16,7 @@ const Services = () => {
           <span style={{color: darkMode ? "white" : ""}}>My Awesome</span>
           <span>Service</span>
           <span >
-            Build custom applications and solutions for changing
-          <br/>
-            business requirements to provide agility.
+            Build custom applications and solutions for changing business requirements to provide agility.
           </span>{/*
           <div className="wiggle">
           <a href={MyResume}>
