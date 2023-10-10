@@ -21,7 +21,7 @@ const transition = {duration : 2, type: 'spring'}
         <div className="i-name">
           <span style={{color: darkMode ? "white" : ""}}>Hy! I Am</span>
           <span>Chinchu Babu</span>
-          <span>
+          <span style={{color: darkMode ? "white" : "black"}}>
             Passionate and self-taught Front end developer capable of learning
             and adopting the latest technologies. A solid mind to tasks and responsibility
             to track and review progress until the committed job is completed. Possess a 
