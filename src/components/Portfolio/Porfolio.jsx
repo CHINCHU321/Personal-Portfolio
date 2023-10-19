@@ -7,10 +7,11 @@ import "swiper/css";
 import  WIWBank from "../../img/WIWBank.png";
 import HEXAGYM from "../../img/HEXAGYM.png";
 import portfolioproject from "../../img/portfolioproject.png";
+import Admindashboard from '../../img/Admindashboard.png';
 import "./Portfolio.css";
 
 // import required modules
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper'
 export default function App() {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
@@ -39,10 +40,10 @@ export default function App() {
           </a>
         </SwiperSlide>
         <SwiperSlide> 
-          <a href="https://github.com/CHINCHU321/Gym-typescript">
-          <img src={HEXAGYM} alt="" />
+          <a href="https://github.com/CHINCHU321/Admin-dashboard">
+          <img src={Admindashboard} alt="" />
           </a>
-          <a href="https://github.com/CHINCHU321/Gym-typescript" className=" button gbtn">
+          <a href="https://github.com/CHINCHU321/Admin-dashboard" className=" button gbtn">
           Github
           </a>
         </SwiperSlide>
@@ -51,6 +52,14 @@ export default function App() {
           <img src={portfolioproject} alt="" />
           </a>
           <a href="https://github.com/CHINCHU321/Personal-Portfolio" className=" button gbtn">
+          Github
+          </a>
+        </SwiperSlide>
+        <SwiperSlide> 
+          <a href="https://github.com/CHINCHU321/Gym-typescript">
+          <img src={HEXAGYM} alt="" />
+          </a>
+          <a href="https://github.com/CHINCHU321/Gym-typescript" className=" button gbtn">
           Github
           </a>
         </SwiperSlide>
